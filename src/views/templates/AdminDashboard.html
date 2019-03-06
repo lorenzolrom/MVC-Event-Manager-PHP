@@ -1,0 +1,46 @@
+<h2>Users/Attendees</h2>
+<div class="button-bar">
+    <a class="button" href="{{@baseURI}}admin/attendees/create">Create</a>
+</div>
+<table class="results">
+    <tbody>
+        <tr>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Delete?</th>
+        </tr>
+        {{@attendeeList}}
+    </tbody>
+</table>
+
+<h2>Venues</h2>
+<div class="button-bar">
+    <a class="button" href="{{@baseURI}}admin/venues/create">Create</a>
+</div>
+<table class="results">
+    <tbody>
+    <tr>
+        <th>Name</th>
+        <th>Capacity</th>
+        <th>Delete?</th>
+    </tr>
+    {{@venueList}}
+    </tbody>
+</table>
+
+<h2>All Events</h2>
+<div class="button-bar">
+    <a class="button" href="{{@baseURI}}admin/events/create">Create</a>
+</div>
+<table class="results">
+    <tbody>
+    <tr>
+        <th>Name</th>
+        <th>Venue Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Maximum Attendees</th>
+    </tr>
+    {{@eventList}}
+    </tbody>
+</table>

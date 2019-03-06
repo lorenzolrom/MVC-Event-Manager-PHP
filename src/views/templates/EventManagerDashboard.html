@@ -1,0 +1,16 @@
+<h2>My Events</h2>
+<div class="button-bar">
+    <a class="button" href="{{@baseURI}}admin/events/create">Create</a>
+</div>
+<table class="results">
+    <tbody>
+    <tr>
+        <th>Name</th>
+        <th>Venue Name</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Maximum Attendees</th>
+    </tr>
+    {{@myEventList}}
+    </tbody>
+</table>

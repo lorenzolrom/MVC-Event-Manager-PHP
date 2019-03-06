@@ -1,0 +1,25 @@
+{{@eventMenu}}
+<h2 class="region-title">Event Profile</h2>
+<table class="table-display">
+    <tbody>
+        <tr>
+            <td>Event Name</td>
+            <td>{{@name}}</td>
+        </tr>
+    <tr>
+        <td>Begins</td>
+        <td>{{@datestart}}</td>
+        <td>Ends</td>
+        <td>{{@dateend}}</td>
+    </tr>
+    <tr>
+        <td>Venue Name</td>
+        <td>{{@venueName}}</td>
+        <td>Maximum Attendees</td>
+        <td>{{@numberallowed}}</td>
+    </tr>
+    {{@managerList}}
+    </tbody>
+</table>
+<h2 id="sessions" class="region-title region-expand region-expand-collapsed">Sessions</h2>
+<div id="sessions-region" class="region">{{@sessionList}}</div>

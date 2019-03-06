@@ -1,0 +1,23 @@
+<form class="basic-form form" method="post">
+    <p>
+        <span class="required">Name</span>
+        <input type="text" name="name" value="{{@name}}">
+    </p>
+    <p>
+        <span {{@passwordRequired}}>Password</span>
+        <input type="password" name="password">
+    </p>
+    <p>
+        <span {{@passwordRequired}}>Confirm</span>
+        <input type="password" name="confirm">
+    </p>
+    <p>
+        <span class="required">Role</span>
+        <select name="roles">
+            <option value="">--SELECT--</option>
+            {{@roleOptions}}
+        </select>
+    </p>
+    <input class="button" type="submit" value="Save">
+    <a class="button" href="{{@baseURI}}admin">Cancel</a>
+</form>

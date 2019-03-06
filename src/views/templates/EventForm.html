@@ -1,0 +1,30 @@
+<div class="button-bar">
+    <span class="button form-submit-button" id="event">Save</span>
+    <a class="button" href="{{@baseURI}}{{@parentPage}}">Cancel</a>
+</div>
+<form id="event-form" class="table-form form" method="post">
+    <h2 class="region-title">Event Profile</h2>
+    <table class="table-display">
+        <tbody>
+        <tr>
+            <td class="required">Event Name</td>
+            <td><input type="text" name="name" value="{{@name}}"></td>
+        </tr>
+        <tr>
+            <td class="required">Begins</td>
+            <td><input class="date-input" type="text" name="datestart" value="{{@datestart}}"></td>
+            <td class="required">Ends</td>
+            <td><input class="date-input" type="text" name="dateend" value="{{@dateend}}"></td>
+        </tr>
+        <tr>
+            <td class="required">Venue Name</td>
+            <td><select name="venue">
+                {{@venueList}}
+            </select></td>
+            <td class="required">Maximum Attendees</td>
+            <td><input type="text" name="numberallowed" value="{{@numberallowed}}"></td>
+        </tr>
+        {{@managerSelect}}
+        </tbody>
+    </table>
+</form>

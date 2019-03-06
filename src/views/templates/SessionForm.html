@@ -1,0 +1,39 @@
+<div class="button-bar">
+    <span class="button form-submit-button" id="session">Save</span>
+    <a class="button" href="{{@baseURI}}{{@parentPage}}">Cancel</a>
+</div>
+<form id="session-form" class="table-form form" method="post">
+    <h2 class="region-title">Session Profile</h2>
+    <table class="table-display">
+        <tbody>
+        <tr>
+            <td>Event Name</td>
+            <td>{{@eventname}}</td>
+            <td>Venue Name</td>
+            <td>{{@venueName}}</td>
+        </tr>
+        <tr>
+            <td class="required">Session Name</td>
+            <td><input type="text" name="name" value="{{@name}}"></td>
+        </tr>
+        <tr>
+            <td class="required">Start Date</td>
+            <td><input class="date-input" type="text" name="startdate" value="{{@startdate}}"></td>
+            <td class="required">End Date</td>
+            <td><input class="date-input" type="text" name="enddate" value="{{@enddate}}"></td>
+        </tr>
+        <tr>
+            <td class="required">Start Time</td>
+            <td><input type="text" name="starttime" value="{{@starttime}}" placeholder="hh:ii:ss"></td>
+            <td class="required">End Time</td>
+            <td><input type="text" name="endtime" value="{{@endtime}}" placeholder="hh:ii:ss"></td>
+        </tr>
+        <tr>
+            <td>Currently Attending</td>
+            <td>{{@attendeecount}}</td>
+            <td class="required">Maximum Attendees</td>
+            <td><input type="text" name="numberallowed" value="{{@numberallowed}}"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>

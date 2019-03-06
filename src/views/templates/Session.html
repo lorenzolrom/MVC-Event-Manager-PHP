@@ -1,0 +1,31 @@
+<div class="button-bar">
+    {{@buttons}}
+</div>
+<h2 class="region-title">Session Profile</h2>
+<table class="table-display">
+    <tbody>
+    <tr>
+        <td>Event Name</td>
+        <td>{{@eventname}}</td>
+        <td>Venue Name</td>
+        <td>{{@venueName}}</td>
+    </tr>
+    <tr>
+        <td>Session Name</td>
+        <td>{{@sessionname}}</td>
+    </tr>
+    <tr>
+        <td>Start Time</td>
+        <td>{{@startdate}}</td>
+        <td>End Time</td>
+        <td>{{@enddate}}</td>
+    </tr>
+    <tr>
+        <td>Currently Attending</td>
+        <td>{{@attendeecount}}</td>
+        <td>Maximum Attendees</td>
+        <td>{{@numberallowed}}</td>
+    </tr>
+    </tbody>
+</table>
+{{@attendeeList}}

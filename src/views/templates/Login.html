@@ -1,0 +1,17 @@
+<form method="post" id="login-window">
+    <span id="login-logo"></span>
+    <span id="login-title">{{@siteTitle}}</span>
+    {{@notifications}}
+    <p>
+        <input name="username" type="text" value="{{@username}}" placeholder="Username">
+    </p>
+    <p>
+        <input name="password" type="password" placeholder="Password">
+    </p>
+    <input id="login-button" type="submit" value="Log In">
+</form>
+<script>
+    $('#login-window').submit(function(){
+    $('#login-button').val("Logging in...");
+    });
+</script>
